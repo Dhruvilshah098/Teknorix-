@@ -1,0 +1,248 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.App {
+  text-align: center;
+}
+
+.userTitle {
+  color: #2B2D38;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.userLocation {
+  font-size: 20px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userLocation p {
+  margin: 0px 10px;
+}
+
+.userLocation label {
+  height: 25px;
+  font-size: 13px;
+  border: 1px solid #D2D7E7;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 4px 15px;
+  color: #555C6A;
+  background: #D2D7E7;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.BtnWrapper {
+  text-align: right;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.BtnWrapper a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.9rem 1.5rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.ViewBtn {
+  margin-left: 12px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.9rem 1.5rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border: 0px;
+  background: white;
+}
+
+.ViewBtn button:hover {
+  background: white;
+}
+
+.DataWrapper {
+  padding: 1rem 2rem;
+}
+
+.DataWrapper:hover {
+  background: #eff3fb !important;
+}
+
+.ApplyBtn {
+  color: #4b96e6 !important;
+  border-color: #4b96e6 !important;
+  font-weight: bold;
+  border: 1px  solid;
+}
+
+.ApplyBtn a:hover {
+  background: #4b96e6;
+  color: #fff !important;
+}
+
+.DataContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.depart {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.depart p {
+  margin-bottom: 0px;
+}
+
+.depart .userTitle {
+  font-size: 36px;
+}
+
+.depart .userLocation {
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+
+.depart .ApplyBtn {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.9rem 7.5rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  background: #4b96e6;
+  color: white !important;
+  text-decoration: none;
+}
+
+.userDescription {
+  margin-top: 3rem;
+}
+
+.OtherJob {
+  padding: 20px;
+  border: 1px solid #D2D7E7;
+  background: #eff3fb;
+  text-align: left;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.OtherJob p {
+  font-size: 20px;
+  font-weight: bold !important;
+  padding-bottom: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.OtherJob .userLocation p {
+  font-size: 11px !important;
+  font-weight: 100 !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0rem;
+  -ms-flex-item-align: center !important;
+      -ms-grid-row-align: center !important;
+      align-self: center !important;
+  margin-right: 7px !important;
+}
+
+.OtherJob .userTitle {
+  font-size: 18px !important;
+}
+
+.hr {
+  margin-top: 60px;
+  margin-bottom: 0;
+  border: 0.5px solid #7f8dbb;
+}
+
+.OtherJobTitle::before {
+  content: " ";
+  position: absolute;
+  top: 60px;
+  width: 70px;
+  height: 5px;
+  background-color: #4d94e4;
+}
+
+.Data-Wrapper {
+  padding: 3rem 0rem;
+}
+
+.SearchFilter {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 4px 0 #e4e5ef;
+          box-shadow: 0 2px 4px 0 #e4e5ef;
+  background-color: #F5F8FC;
+  position: relative;
+  padding: 20px;
+  min-height: 80px;
+  margin: 2rem 4rem 4rem;
+}
+
+#input_container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+#input_img {
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+  width: 100%;
+  display: inline-block;
+}
+
+.search input {
+  width: 100%;
+  height: 32px;
+  text-indent: 12px !important;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  left: auto;
+  right: 10px;
+}
+/*# sourceMappingURL=App.css.map */
