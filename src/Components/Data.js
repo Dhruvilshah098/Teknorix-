@@ -14,7 +14,7 @@ function Data () {
     const handleClick = () => {
         navigate('/');
       };
-  const { id } = useParams();
+    const { id } = useParams();
 
   // const [post, SetPost] = useState({});
   // useEffect(() => {
@@ -49,53 +49,52 @@ function Data () {
     <div classname="MainWrapper row">
           
           {post.filter(user => {
-        if (query === "") {
-          return user;
-        } else if (user.title.toLowerCase().includes(query.toLowerCase())) {
-          return user;
-        }
-        }).map((user,key) => (
-                <div  key={key}>
+              if (query === "") {
+                return user;
+              } else if (user.title.toLowerCase().includes(query.toLowerCase())) {
+                return user;
+              }
+              }).map((user,key) => (
+                      <div  key={key}>
             
           <Container className='Data-Wrapper'>
         <Row>
         <button onClick={handleClick}>Go back</button>
-          {/* <div className="userTitle" >{user.id}</div> */}
-      <div className="depart"><p>{post.industry} Department at Teknorix</p> 
-              <div className="userTitle" >{post.title}</div>
+        <div className="depart"><p>{post.industry} Department at Teknorix</p> 
+          <div className="userTitle" >{post.title}</div>
           <div className="userLocation" ><FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon><p>{post.industry}</p> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon><p>{post.location.title}</p> <label>full time </label> </div>
 
           <a href="https://jobs.teknorix.com/apply/41863?source=Website" className="ApplyBtn">Apply</a>      
       
-          </div>
+        </div>
           
       <br></br>
-          <hr className="hr"></hr>
-          <Col xs={8}>
+      
+      <hr className="hr"></hr>
+      
+      <Col xs={8}>
         
-          <div className="userDescription" >
-            {post.description}</div>
-          </Col>
+      <div className="userDescription" >
+        {post.description}
+      </div>
+      </Col>
 
-          <Col xs={4} >
+      <Col xs={4} >
 
       <div className="OtherJob">
-      <p className='OtherJobTitle'>OTHER JOB OPENINGS</p>
-      <div className="userTitle" >{post.title}</div>
+        <p className='OtherJobTitle'>OTHER JOB OPENINGS</p>
+        <div className="userTitle" >{post.title}</div>
         <div className="userLocation" ><FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon><p>{post.industry}</p> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon><p>{post.location.title}</p> <label>full time </label> </div>
-        
-      </div>
+       </div>
           
       </Col>
-        </Row>
-        </Container>    
-        </div>
-)
-
- )
+    </Row>
+  </Container>    
+</div>
+))
 }
 </div>
-  )
+)
 }
 
 export default Data;

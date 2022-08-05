@@ -28,28 +28,26 @@ function SearchBox() {
     <div className="SearchFilter">
 
     <div className="search">
-<span className="fa fa-search"></span>
-<input placeholder="Search for Job" value={query} onChange={event => setQuery(event.target.value)}/>
-
+    <span className="fa fa-search"></span>
+    <input placeholder="Search for Job" value={query} onChange={event => setQuery(event.target.value)}/>
+  </div>
 </div>
-
-    </div>
     {post.filter(user => {
-if (query === "") {
-  return user;
-} else if (user.title.toLowerCase().includes(query.toLowerCase())) {
-  return user;
-}
-}).map((user,key) => (
-        <div  key={key}>
-    
+      if (query === "") {
+        return user;
+      } else if (user.title.toLowerCase().includes(query.toLowerCase())) {
+        return user;
+      }
+      }).map((user,key) => (
+              <div  key={key}>
+          
     <Container className='DataWrapper'>
-  <Row className='DataContainer'>
-    <Col xs={7}>
+        <Row className='DataContainer'>
+            <Col xs={7}>
 
-        <div className="userTitle" >{user.title}</div>
-    <div className="userLocation" ><FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon><p>{user.industry}</p> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon><p>{user.location.title}</p> <label>full time </label> </div>
-    </Col>
+                <div className="userTitle" >{user.title}</div>
+            <div className="userLocation" ><FontAwesomeIcon icon={faBuilding}></FontAwesomeIcon><p>{user.industry}</p> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon><p>{user.location.title}</p> <label>full time </label> </div>
+            </Col>
 
     <Col xs={5} className="BtnWrapper">
 
@@ -57,12 +55,10 @@ if (query === "") {
     <a href="https://jobs.teknorix.com/apply/41863?source=Website" className="ApplyBtn">Apply</a>
     <button className="ViewBtn" >View</button>
     
-</Col>
-  </Row>
-  </Container>    
-    </div>
-
-    
+      </Col>
+        </Row>
+        </Container>    
+          </div>    
   ))}
 
 </div>
