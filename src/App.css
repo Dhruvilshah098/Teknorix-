@@ -13,18 +13,12 @@
 .userLocation {
   font-size: 20px;
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .userLocation p {
   margin: 0px 10px;
 }
-
 .userLocation label {
   height: 25px;
   font-size: 13px;
@@ -40,11 +34,8 @@
 
 .BtnWrapper {
   text-align: right;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .BtnWrapper a {
   text-decoration: none;
   color: black;
@@ -52,10 +43,8 @@
   font-size: 16px;
   padding: 0.9rem 1.5rem;
   border-radius: 4rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-transform: none;
-  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 
@@ -67,15 +56,12 @@
   font-size: 16px;
   padding: 0.9rem 1.5rem;
   border-radius: 4rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-transform: none;
-  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   border: 0px;
   background: white;
 }
-
 .ViewBtn button:hover {
   background: white;
 }
@@ -92,21 +78,16 @@
   color: #4b96e6 !important;
   border-color: #4b96e6 !important;
   font-weight: bold;
-  border: 1px  solid;
+  border: 1px solid;
 }
-
 .ApplyBtn a:hover {
   background: #4b96e6;
   color: #fff !important;
 }
 
 .DataContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .depart {
@@ -114,29 +95,23 @@
   font-weight: bold;
   text-align: left;
 }
-
 .depart p {
   margin-bottom: 0px;
 }
-
 .depart .userTitle {
   font-size: 36px;
 }
-
 .depart .userLocation {
   font-weight: 400;
   margin-bottom: 5rem;
 }
-
 .depart .ApplyBtn {
   font-weight: bold;
   font-size: 16px;
   padding: 0.9rem 7.5rem;
   border-radius: 4rem;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-transform: none;
-  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   background: #4b96e6;
   color: white !important;
@@ -155,25 +130,20 @@
   margin-top: 3rem;
   position: relative;
 }
-
 .OtherJob p {
   font-size: 20px;
   font-weight: bold !important;
   padding-bottom: 1rem;
   margin-bottom: 1.8rem;
 }
-
 .OtherJob .userLocation p {
   font-size: 11px !important;
   font-weight: 100 !important;
   padding-bottom: 0px !important;
   margin-bottom: 0rem;
-  -ms-flex-item-align: center !important;
-      -ms-grid-row-align: center !important;
-      align-self: center !important;
+  align-self: center !important;
   margin-right: 7px !important;
 }
-
 .OtherJob .userTitle {
   font-size: 18px !important;
 }
@@ -199,8 +169,7 @@
 
 .SearchFilter {
   border-radius: 3px;
-  -webkit-box-shadow: 0 2px 4px 0 #e4e5ef;
-          box-shadow: 0 2px 4px 0 #e4e5ef;
+  box-shadow: 0 2px 4px 0 #e4e5ef;
   background-color: #F5F8FC;
   position: relative;
   padding: 20px;
@@ -229,7 +198,6 @@
   width: 100%;
   display: inline-block;
 }
-
 .search input {
   width: 100%;
   height: 32px;
@@ -237,12 +205,10 @@
   background: #fcfcfc;
   border: 1px solid #aaa;
 }
-
 .search .fa-search {
   position: absolute;
   top: 10px;
   left: 10px;
   left: auto;
   right: 10px;
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */

@@ -5,25 +5,28 @@ import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBuilding, faLocation, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faBuilding, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 function SearchBox() {
     const [post, setPost] = React.useState();
     const [query, setQuery] = useState("")
-    const baseURL = "https://teknorix.jobsoid.com/api/v1/jobs/";
+const baseURL = "https://teknorix.jobsoid.com/api/v1/jobs/";
 
-    React.useEffect(() => {
-      axios.get(baseURL).then((response) => {
-        setPost(response.data);
-        console.log(post);
-      });
-      
+  React.useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      setPost(response.data);
+      console.log(post);
+    });
+    
   }, []);
 
   if (!post) return null;
-  
+
+
   
   return (
+      
     <div className="MainWrapper row">
     <div className="SearchFilter">
 
@@ -52,8 +55,11 @@ function SearchBox() {
     <Col xs={5} className="BtnWrapper">
 
 
-    <a href="https://jobs.teknorix.com/apply/41863?source=Website" className="ApplyBtn">Apply</a>
+    <a href= {`https://jobs.teknorix.com/apply/${user.id}`} className="ApplyBtn">Apply</a>
+
+    <Link to = {`/${user.id}`}>
     <button className="ViewBtn" >View</button>
+    </Link>
     
       </Col>
         </Row>
@@ -62,7 +68,8 @@ function SearchBox() {
   ))}
 
 </div>
-  )
+  );
+
 }
 
 export default SearchBox
